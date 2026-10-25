@@ -1,0 +1,1645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INSTA by Altmash — Autonomous AI Video Agents for Instagram & Social</title>
+  <meta name="description" content="Deploy specialized AI agents that research viral trends, write scripts, edit retention-optimized Reels, and auto-publish at peak algorithmic hours.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- =======================================================================
+       1. ANNOUNCEMENT BAR & NAVIGATION
+       ======================================================================= -->
+  <aside class="announcement-bar" role="banner">
+    <div class="container">
+      <span class="badge">INSTA 3.0</span>
+      <span>Autonomous by Altmash multi-agent Reel studio is officially live.</span>
+      <a href="#demo">Watch 2-Min Walkthrough <span aria-hidden="true">&rarr;</span></a>
+    </div>
+  </aside>
+
+  <header class="site-nav-wrapper">
+    <div class="container">
+      <nav class="site-nav" aria-label="Main Navigation">
+        <!-- Brand Logo -->
+        <a href="#" class="nav-brand">
+          <div class="brand-logo-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="5 3 19 12 5 21 5 3"></polygon>
+            </svg>
+          </div>
+          <span>INSTA</span>
+        </a>
+
+        <!-- Center Links -->
+        <ul class="nav-links">
+          <li><a href="#agents" class="nav-link">Agents</a></li>
+          <li><a href="#workspace" class="nav-link">Workspace</a></li>
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#templates" class="nav-link">Templates</a></li>
+          <li><a href="#benchmark" class="nav-link">Benchmark</a></li>
+          <li><a href="#pricing" class="nav-link">Pricing</a></li>
+          
+          <li class="nav-dropdown">
+            <a href="#resources" class="nav-link">
+              Resources
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <div class="nav-dropdown-menu">
+              <a href="#plugin" class="dropdown-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+                Developer API & CLI
+              </a>
+              <a href="#templates" class="dropdown-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+                Viral Hook Database
+              </a>
+              <a href="#faq" class="dropdown-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                Help & Documentation
+              </a>
+            </div>
+          </li>
+        </ul>
+
+        <!-- Action Buttons -->
+        <div class="nav-actions">
+          <a href="#signin" class="nav-signin">Sign In</a>
+          <a href="#pricing" class="btn btn-dark">Start Free Trial</a>
+          <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- =======================================================================
+         2. HERO SECTION
+         ======================================================================= -->
+    <section class="hero-section">
+      <div class="container">
+        
+        <!-- Social Badges Pill -->
+        <div class="hero-social-badges">
+          <div class="social-badge-icon" style="background:#e1306c; color:#fff;">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </div>
+          <span class="social-badge-label">Instagram Reels</span>
+          <span style="color:#cbd5e1;">•</span>
+          <div class="social-badge-icon" style="background:#000; color:#fff;">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 3 15.68 6.34 6.34 0 0 0 9.34 22a6.34 6.34 0 0 0 6.34-6.32V8.75a8.16 8.16 0 0 0 4.91 1.63v-3.45a4.85 4.85 0 0 1-1-.24z"/></svg>
+          </div>
+          <span class="social-badge-label">TikTok</span>
+          <span style="color:#cbd5e1;">•</span>
+          <div class="social-badge-icon" style="background:#ff0000; color:#fff;">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="10 8 16 12 10 16 10 8"/></svg>
+          </div>
+          <span class="social-badge-label">YouTube Shorts</span>
+        </div>
+
+        <!-- Headline -->
+        <h1 class="hero-headline">
+          Autonomous AI agents that <span class="gradient-text">research, script, edit & scale</span> viral social video.
+        </h1>
+
+        <p class="hero-subhead">
+          Meet INSTA 2.0. Four specialized agents coordinate continuously to mine hooks, synthesize retention-focused edits, and publish high-converting Reels on autopilot.
+        </p>
+
+        <!-- Composer Field -->
+        <div class="hero-composer-box">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input 
+            type="text" 
+            class="hero-composer-input" 
+            id="heroComposerInput"
+            placeholder="Paste any Reel URL or prompt: 'Create 5 high-converting SaaS hook scripts'..." 
+            value="Analyze https://instagram.com/reel/trending-hook and remix for SaaS marketing"
+          >
+          <button class="btn btn-blue" id="heroPromptBtn" style="padding: 0.55rem 1.15rem; font-size: 0.85rem;">
+            <span>Deploy Agents</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </button>
+        </div>
+
+        <!-- Quick Chips -->
+        <div class="hero-prompt-chips">
+          <span style="font-size: 0.75rem; color: #64748b; font-weight: 600;">Try:</span>
+          <button class="prompt-chip" data-prompt="Recreate this viral AI explainer with custom voiceover">AI Explainer Breakdown</button>
+          <button class="prompt-chip" data-prompt="Generate 10 eCommerce hook variations for skincare">eCommerce Hook Matrix</button>
+          <button class="prompt-chip" data-prompt="Scan top 100 fintech creators for emerging audio trends">Emerging Audio Radar</button>
+          <button class="prompt-chip" data-prompt="Auto-schedule 7 Reels optimized for 6:30 PM PST">Autopilot Weekly Queue</button>
+        </div>
+
+        <!-- Agent Avatars Row -->
+        <div class="hero-agent-avatars">
+          <div class="avatar-stack">
+            <div class="avatar-item" style="background-color: #3b82f6; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 0.75rem; font-weight: 700;">SC</div>
+            <div class="avatar-item" style="background-color: #8b5cf6; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 0.75rem; font-weight: 700;">SB</div>
+            <div class="avatar-item" style="background-color: #06b6d4; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 0.75rem; font-weight: 700;">FX</div>
+            <div class="avatar-item" style="background-color: #10b981; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 0.75rem; font-weight: 700;">PL</div>
+          </div>
+          <span class="avatar-label-text">4 Specialists Active in Cluster</span>
+          <span style="color:#cbd5e1;">•</span>
+          <span class="avatar-label-tag">
+            <span style="width:6px; height:6px; border-radius:50%; background:#10b981;"></span>
+            2,480+ Reels Processed Today
+          </span>
+        </div>
+
+      </div>
+
+      <!-- Tilted Horizontal Video Collage -->
+      <div class="hero-collage-wrapper">
+        <div class="hero-collage-track">
+
+          <!-- Card 1 -->
+          <div class="video-card-thumb" style="transform: rotate(2deg);">
+            <div class="video-thumb-img" style="background: linear-gradient(145deg, #1e293b, #0f172a);">
+              <svg width="100%" height="100%" viewBox="0 0 190 320" preserveAspectRatio="none">
+                <defs>
+                  <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#2563eb" stop-opacity="0.6"/>
+                    <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95"/>
+                  </linearGradient>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#grad1)"/>
+                <circle cx="95" cy="130" r="45" fill="#3b82f6" fill-opacity="0.25"/>
+                <path d="M40 220 Q95 190 150 220" stroke="#60a5fa" stroke-width="3" fill="none"/>
+              </svg>
+            </div>
+            <div class="video-overlay-gradient"></div>
+            <div class="video-overlay-top">
+              <span class="video-badge-pill">🔥 3.4M Views</span>
+              <span class="video-badge-pill" style="background: rgba(37, 99, 235, 0.7);">SaaS</span>
+            </div>
+            <div class="play-btn-circle">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+            </div>
+            <div class="video-overlay-bottom">
+              <div class="video-hook-title">"Stop using generic landing pages in 2026..."</div>
+              <div class="video-stat-row">
+                <span>Hook Rate: 84%</span>
+                <span>Avg: 28s</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 (Dominant / Center-Left) -->
+          <div class="video-card-thumb" style="transform: rotate(-1.5deg) scale(1.04); z-index: 2;">
+            <div class="video-thumb-img" style="background: linear-gradient(145deg, #312e81, #1e1b4b);">
+              <svg width="100%" height="100%" viewBox="0 0 190 320" preserveAspectRatio="none">
+                <defs>
+                  <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#6366f1" stop-opacity="0.7"/>
+                    <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95"/>
+                  </linearGradient>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#grad2)"/>
+                <rect x="35" y="70" width="120" height="90" rx="8" fill="#4338ca" fill-opacity="0.3" stroke="#818cf8" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <div class="video-overlay-gradient"></div>
+            <div class="video-overlay-top">
+              <span class="video-badge-pill">🚀 1.8M Views</span>
+              <span class="video-badge-pill" style="background: rgba(16, 185, 129, 0.7);">eCom</span>
+            </div>
+            <div class="play-btn-circle">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+            </div>
+            <div class="video-overlay-bottom">
+              <div class="video-hook-title">"The 3 packaging changes that doubled our AOV."</div>
+              <div class="video-stat-row">
+                <span>Shares: 42.1K</span>
+                <span>CTR: 4.8%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 (Center) -->
+          <div class="video-card-thumb" style="transform: rotate(1deg) scale(1.06); z-index: 3;">
+            <div class="video-thumb-img" style="background: linear-gradient(145deg, #064e3b, #022c22);">
+              <svg width="100%" height="100%" viewBox="0 0 190 320" preserveAspectRatio="none">
+                <defs>
+                  <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#10b981" stop-opacity="0.6"/>
+                    <stop offset="100%" stop-color="#022c22" stop-opacity="0.95"/>
+                  </linearGradient>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#grad3)"/>
+                <circle cx="95" cy="110" r="38" fill="#059669" fill-opacity="0.3"/>
+                <line x1="30" y1="180" x2="160" y2="180" stroke="#34d399" stroke-width="2"/>
+                <line x1="30" y1="200" x2="120" y2="200" stroke="#34d399" stroke-width="2"/>
+              </svg>
+            </div>
+            <div class="video-overlay-gradient"></div>
+            <div class="video-overlay-top">
+              <span class="video-badge-pill">⚡ 4.2M Views</span>
+              <span class="video-badge-pill" style="background: rgba(99, 102, 241, 0.7);">Product</span>
+            </div>
+            <div class="play-btn-circle">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+            </div>
+            <div class="video-overlay-bottom">
+              <div class="video-hook-title">"If you're still building AI agents manually..."</div>
+              <div class="video-stat-row">
+                <span>Hook Rate: 91%</span>
+                <span>Saves: 88K</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 (Center-Right) -->
+          <div class="video-card-thumb" style="transform: rotate(-2deg); z-index: 2;">
+            <div class="video-thumb-img" style="background: linear-gradient(145deg, #701a75, #4a044e);">
+              <svg width="100%" height="100%" viewBox="0 0 190 320" preserveAspectRatio="none">
+                <defs>
+                  <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#d946ef" stop-opacity="0.6"/>
+                    <stop offset="100%" stop-color="#4a044e" stop-opacity="0.95"/>
+                  </linearGradient>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#grad4)"/>
+                <polygon points="95,60 145,150 45,150" fill="#a21caf" fill-opacity="0.3" stroke="#f0abfc" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <div class="video-overlay-gradient"></div>
+            <div class="video-overlay-top">
+              <span class="video-badge-pill">💎 920K Views</span>
+              <span class="video-badge-pill" style="background: rgba(217, 70, 239, 0.7);">Founder</span>
+            </div>
+            <div class="play-btn-circle">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+            </div>
+            <div class="video-overlay-bottom">
+              <div class="video-hook-title">"How 1 solo founder hit $80k MRR with 0 ad spend."</div>
+              <div class="video-stat-row">
+                <span>Retention: 72%</span>
+                <span>Comments: 1.4K</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 (Right) -->
+          <div class="video-card-thumb" style="transform: rotate(2.5deg);">
+            <div class="video-thumb-img" style="background: linear-gradient(145deg, #1e3a8a, #172554);">
+              <svg width="100%" height="100%" viewBox="0 0 190 320" preserveAspectRatio="none">
+                <defs>
+                  <linearGradient id="grad5" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.6"/>
+                    <stop offset="100%" stop-color="#172554" stop-opacity="0.95"/>
+                  </linearGradient>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#grad5)"/>
+                <rect x="50" y="80" width="90" height="90" rx="16" fill="#1d4ed8" fill-opacity="0.3" stroke="#93c5fd" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <div class="video-overlay-gradient"></div>
+            <div class="video-overlay-top">
+              <span class="video-badge-pill">📈 2.7M Views</span>
+              <span class="video-badge-pill" style="background: rgba(30, 64, 175, 0.7);">B2B</span>
+            </div>
+            <div class="play-btn-circle">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+            </div>
+            <div class="video-overlay-bottom">
+              <div class="video-hook-title">"The secret B2B video formula everyone ignores."</div>
+              <div class="video-stat-row">
+                <span>Conversions: 840</span>
+                <span>ROI: 14x</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- =======================================================================
+         3. AGENT OVERVIEW SECTION
+         ======================================================================= -->
+    <section class="agent-overview-section" id="agents">
+      <div class="container">
+        
+        <div class="section-header-centered">
+          <span class="eyebrow">01 / AUTONOMOUS SPECIALISTS</span>
+          <h2>Your dedicated, multi-agent Instagram production crew.</h2>
+          <p>
+            Rather than relying on one generic prompt, INSTA deploys specialized autonomous agents trained specifically on high-retention video heuristics.
+          </p>
+        </div>
+
+        <!-- 4 Agent Cards -->
+        <div class="agent-cards-grid">
+          
+          <!-- Agent 1: Scout -->
+          <div class="agent-card active" data-agent="scout">
+            <div class="agent-avatar-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </div>
+            <div class="agent-card-role">Research & Discovery</div>
+            <h3 class="agent-card-name">Agent Scout</h3>
+            <p class="agent-card-desc">
+              Continuously crawls 250k+ viral creators, detecting audio shifts, hook patterns, and breakout angles 48 hours early.
+            </p>
+            <div class="agent-card-metrics">
+              <span>Coverage: 32 Niches</span>
+              <span style="color:#10b981;">● Online</span>
+            </div>
+          </div>
+
+          <!-- Agent 2: Scribe -->
+          <div class="agent-card" data-agent="scribe">
+            <div class="agent-avatar-wrap" style="color: #8b5cf6; background: #f5f3ff;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M12 20h9"></path>
+                <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+              </svg>
+            </div>
+            <div class="agent-card-role">Scripting & Hooks</div>
+            <h3 class="agent-card-name">Agent Scribe</h3>
+            <p class="agent-card-desc">
+              Architects word-for-word retention scripts with micro-hooks every 3 seconds, proven pacing, and on-brand calls-to-action.
+            </p>
+            <div class="agent-card-metrics">
+              <span>Avg Hook Score: 94/100</span>
+              <span style="color:#10b981;">● Online</span>
+            </div>
+          </div>
+
+          <!-- Agent 3: ReelFX -->
+          <div class="agent-card" data-agent="reelfx">
+            <div class="agent-avatar-wrap" style="color: #06b6d4; background: #ecfeff;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <polygon points="23 7 16 12 23 17 23 7"></polygon>
+                <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+              </svg>
+            </div>
+            <div class="agent-card-role">Synthesis & Cut</div>
+            <h3 class="agent-card-name">Agent ReelFX</h3>
+            <p class="agent-card-desc">
+              Pairs footage, dynamic typography captions, b-roll overlays, and rhythm cuts aligned strictly to audio transients.
+            </p>
+            <div class="agent-card-metrics">
+              <span>Render: 45s / 4K</span>
+              <span style="color:#10b981;">● Online</span>
+            </div>
+          </div>
+
+          <!-- Agent 4: Pulse -->
+          <div class="agent-card" data-agent="pulse">
+            <div class="agent-avatar-wrap" style="color: #10b981; background: #ecfdf5;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+            </div>
+            <div class="agent-card-role">Publish & Listening</div>
+            <h3 class="agent-card-name">Agent Pulse</h3>
+            <p class="agent-card-desc">
+              Deploys Reels at dynamic algorithmic peak hours, responds to DMs and comments instantly with intelligent intent parsing.
+            </p>
+            <div class="agent-card-metrics">
+              <span>Response: &lt; 90s</span>
+              <span style="color:#10b981;">● Online</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ===================================================================
+             4. PRODUCT WORKSPACE DEMONSTRATION
+             =================================================================== -->
+        <div class="product-workspace-wrapper" id="workspace">
+          
+          <!-- Top Window Bar -->
+          <div class="workspace-window-header">
+            <div class="window-controls">
+              <span class="window-dot dot-red"></span>
+              <span class="window-dot dot-yellow"></span>
+              <span class="window-dot dot-green"></span>
+            </div>
+            
+            <div class="workspace-project-title">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+              <span>INSTA Studio — Campaign: "Q4 SaaS Hypergrowth"</span>
+            </div>
+
+            <div class="workspace-status-badge">
+              <span>● Cluster Synchronized</span>
+            </div>
+          </div>
+
+          <!-- Split Body: Left Research, Right Storyboard -->
+          <div class="workspace-split-body">
+            
+            <!-- Left Panel -->
+            <div class="workspace-left-panel">
+              <div class="panel-section-title">
+                <span>Active Trend Radar</span>
+                <span style="color:var(--blue-primary); cursor:pointer;">Live Feed</span>
+              </div>
+
+              <!-- Trend Item 1 -->
+              <div class="trend-item-card">
+                <span class="trend-tag">Trending Audio #1</span>
+                <div class="trend-hook-text">"Why nobody is talking about..."</div>
+                <div class="trend-stats">Velocity: +340% • 1.2M videos</div>
+              </div>
+
+              <!-- Trend Item 2 -->
+              <div class="trend-item-card">
+                <span class="trend-tag" style="background:#fdf4ff; color:#a21caf;">Reverse Hook</span>
+                <div class="trend-hook-text">"I tested 40 AI agents so you don't..."</div>
+                <div class="trend-stats">Velocity: +180% • 890K videos</div>
+              </div>
+
+              <!-- Trend Item 3 -->
+              <div class="trend-item-card">
+                <span class="trend-tag" style="background:#ecfdf5; color:#059669;">Contrarian Proof</span>
+                <div class="trend-hook-text">"The biggest lie in modern marketing..."</div>
+                <div class="trend-stats">Velocity: +290% • 450K videos</div>
+              </div>
+
+              <div class="panel-section-title" style="margin-top:0.5rem;">
+                <span>Agent Status Log</span>
+              </div>
+              <div style="font-family:var(--font-mono); font-size:0.75rem; color:#475569; background:#fff; padding:0.65rem; border-radius:6px; border:1px solid #e2e8f0; line-height:1.4;">
+                <div style="color:#2563eb;">[Scout] Extracted 4 high-retention hooks</div>
+                <div style="color:#7c3aed;">[Scribe] Generated 4-scene script structure</div>
+                <div style="color:#0284c7;">[ReelFX] Rendered 4K kinetic typography</div>
+                <div style="color:#16a34a;">[Pulse] Queued for 6:42 PM (98% match)</div>
+              </div>
+            </div>
+
+            <!-- Right Canvas: Storyboard Timeline -->
+            <div class="workspace-right-canvas">
+              <div class="canvas-header-bar">
+                <div class="canvas-title">Reel Storyboard Timeline (00:28 Total Duration)</div>
+                <div style="display:flex; gap:0.5rem;">
+                  <button class="btn btn-outline" style="padding:0.35rem 0.75rem; font-size:0.75rem;">Remix Scene</button>
+                  <button class="btn btn-dark" style="padding:0.35rem 0.85rem; font-size:0.75rem;">Export 4K</button>
+                </div>
+              </div>
+
+              <!-- 4 Storyboard Scenes -->
+              <div class="storyboard-timeline-grid">
+                
+                <!-- Scene 1 -->
+                <div class="scene-frame-card">
+                  <div class="scene-frame-img" style="background: linear-gradient(135deg, #1e293b, #334155); display:flex; align-items:center; justify-content:center; color:#93c5fd; font-weight:700; font-size:0.8rem; text-align:center; padding:10px;">
+                    [Scene 1: 0.0s - 2.8s]<br>Visual Pattern Interrupt
+                  </div>
+                  <div class="scene-frame-meta">
+                    <span class="scene-tag">HOOK SCENE (0-3s)</span>
+                    <p class="scene-prompt">"Stop spending $4,000 on video editors who take 2 weeks to deliver."</p>
+                  </div>
+                </div>
+
+                <!-- Scene 2 -->
+                <div class="scene-frame-card">
+                  <div class="scene-frame-img" style="background: linear-gradient(135deg, #1e1b4b, #3730a3); display:flex; align-items:center; justify-content:center; color:#c7d2fe; font-weight:700; font-size:0.8rem; text-align:center; padding:10px;">
+                    [Scene 2: 2.8s - 10.2s]<br>Agitate Problem & Cost
+                  </div>
+                  <div class="scene-frame-meta">
+                    <span class="scene-tag" style="color:#7c3aed;">CONFLICT & DATA</span>
+                    <p class="scene-prompt">"The algorithm burns fatigue in 48 hours. By the time they deliver, the trend is dead."</p>
+                  </div>
+                </div>
+
+                <!-- Scene 3 -->
+                <div class="scene-frame-card">
+                  <div class="scene-frame-img" style="background: linear-gradient(135deg, #022c22, #065f46); display:flex; align-items:center; justify-content:center; color:#a7f3d0; font-weight:700; font-size:0.8rem; text-align:center; padding:10px;">
+                    [Scene 3: 10.2s - 22.0s]<br>Product Evidence & Velocity
+                  </div>
+                  <div class="scene-frame-meta">
+                    <span class="scene-tag" style="color:#059669;">SOLUTION REVEAL</span>
+                    <p class="scene-prompt">"Watch this: 4 autonomous agents build, voice, caption, and cut 30 Reels in 8 minutes."</p>
+                  </div>
+                </div>
+
+                <!-- Scene 4 -->
+                <div class="scene-frame-card">
+                  <div class="scene-frame-img" style="background: linear-gradient(135deg, #172554, #1e40af); display:flex; align-items:center; justify-content:center; color:#bfdbfe; font-weight:700; font-size:0.8rem; text-align:center; padding:10px;">
+                    [Scene 4: 22.0s - 28.0s]<br>Conversion CTA Loop
+                  </div>
+                  <div class="scene-frame-meta">
+                    <span class="scene-tag">CALL TO ACTION</span>
+                    <p class="scene-prompt">"Comment 'AGENTS' and our listening agent will DM you the template pipeline."</p>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Bottom Dark Command / Chat Bar -->
+          <div class="workspace-bottom-command-bar">
+            <span style="font-family:var(--font-mono); font-size:0.8rem; color:#6fa6e8; font-weight:700;">COMMAND&gt;</span>
+            <div class="command-input-wrap">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+              <input type="text" class="command-input" placeholder="/remix-hook --target 'B2B Founders' --voice 'Deep Punchy American' --captions 'Neon Alex Hormozi'" value="/remix-hook --target 'B2B Founders' --voice 'Deep Punchy American' --captions 'Neon Alex Hormozi'">
+            </div>
+            <div class="command-quick-actions">
+              <span class="cmd-chip">/rescript</span>
+              <span class="cmd-chip">/b-roll</span>
+              <span class="cmd-chip">/publish</span>
+            </div>
+            <button class="btn btn-blue" style="padding:0.45rem 1rem; font-size:0.8rem;">Execute</button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         5. POSITIONING STATEMENT SECTION
+         ======================================================================= -->
+    <section class="positioning-section">
+      <div class="container">
+        <div class="positioning-inner">
+          <span class="pill-badge">THE INSTA PARADIGM</span>
+          <h2 class="positioning-headline">
+            Traditional agencies take 14 days and $3,500 per video.<br>
+            <span class="gradient-text">INSTA ships 30 on-brand Reels in 8 minutes.</span>
+          </h2>
+          <p class="positioning-body">
+            Stop treating short-form video like a bespoke artisanal craft. The algorithm rewards velocity, relentless iterative testing, and real-time adaptation. INSTA automates the entire loop.
+          </p>
+
+          <!-- 4 Capability Tabs -->
+          <div class="capability-tabs">
+            <div class="capability-tab">
+              <div class="capability-num">01 / DISCOVERY</div>
+              <div class="capability-name">Deep Trend Mining</div>
+            </div>
+            <div class="capability-tab">
+              <div class="capability-num">02 / SYNTHESIS</div>
+              <div class="capability-name">1-Click Viral Remixer</div>
+            </div>
+            <div class="capability-tab">
+              <div class="capability-num">03 / ORCHESTRATION</div>
+              <div class="capability-name">Zero-Touch Scheduler</div>
+            </div>
+            <div class="capability-tab">
+              <div class="capability-num">04 / CONVERSION</div>
+              <div class="capability-name">Sentiment Listener</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- =======================================================================
+         6. FEATURE SECTION — RESEARCH (Copy Left, Mockup Right)
+         ======================================================================= -->
+    <section class="feature-row-section" id="features">
+      <div class="container">
+        <div class="feature-grid-row">
+          
+          <!-- Copy Left -->
+          <div class="feature-copy-col">
+            <span class="eyebrow">AUDIENCE INTELLIGENCE</span>
+            <h3 class="feature-headline">
+              Uncover breakout hooks <span class="gradient-text">before competitors</span> even notice.
+            </h3>
+            <p class="feature-paragraph">
+              Agent Scout monitors audio trends, velocity metrics, and script retention patterns across hundreds of thousands of accounts in your vertical, feeding proven formulas straight into your content roadmap.
+            </p>
+
+            <ul class="feature-checklist">
+              <li class="checklist-item">
+                <div class="check-icon-circle">✓</div>
+                <span>Real-time audio transient detection & emerging velocity rankings.</span>
+              </li>
+              <li class="checklist-item">
+                <div class="check-icon-circle">✓</div>
+                <span>Retention curve profiling: discover where viewers drop off in competitor reels.</span>
+              </li>
+              <li class="checklist-item">
+                <div class="check-icon-circle">✓</div>
+                <span>Automatic niche topic clustering and keyword volume heatmaps.</span>
+              </li>
+            </ul>
+
+            <div class="feature-attribution-badge">
+              <span class="dot"></span>
+              <span>Executed autonomously by <strong>Agent Scout</strong></span>
+            </div>
+          </div>
+
+          <!-- Mockup Right (Pale Blue Surface) -->
+          <div class="feature-mockup-col">
+            <div class="feature-mockup-card">
+              <div class="research-ui-card">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
+                  <span style="font-weight:700; font-size:0.9rem;">Live Trend Velocity Heatmap</span>
+                  <span class="pill-badge" style="font-size:0.7rem;">Updated 2m ago</span>
+                </div>
+
+                <div class="ui-metric-row">
+                  <div class="metric-box">
+                    <div class="metric-box-val">94.2%</div>
+                    <div class="metric-box-lbl">Avg Hook Rate</div>
+                  </div>
+                  <div class="metric-box">
+                    <div class="metric-box-val">+310%</div>
+                    <div class="metric-box-lbl">Viral Velocity</div>
+                  </div>
+                  <div class="metric-box">
+                    <div class="metric-box-val">42.8k</div>
+                    <div class="metric-box-lbl">Shares/Hr</div>
+                  </div>
+                </div>
+
+                <div class="viral-pattern-item">
+                  <div>
+                    <strong style="color:#0b0f19;">"Nobody wants to admit this, but..."</strong>
+                    <div style="font-size:0.75rem; color:#64748b;">Niche: B2B Growth • 2.4s hook window</div>
+                  </div>
+                  <span class="pattern-badge">+412% Growth</span>
+                </div>
+
+                <div class="viral-pattern-item">
+                  <div>
+                    <strong style="color:#0b0f19;">"The exact checklist I used to scale..."</strong>
+                    <div style="font-size:0.75rem; color:#64748b;">Niche: E-commerce • 1.9s hook window</div>
+                  </div>
+                  <span class="pattern-badge">+280% Growth</span>
+                </div>
+
+                <div class="viral-pattern-item" style="border-bottom:none;">
+                  <div>
+                    <strong style="color:#0b0f19;">"If you have an iPhone and 15 minutes..."</strong>
+                    <div style="font-size:0.75rem; color:#64748b;">Niche: Creator Economy • 2.1s hook window</div>
+                  </div>
+                  <span class="pattern-badge">+190% Growth</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         7. FEATURE SECTION — RECREATE (Mockup Left, Copy Right)
+         ======================================================================= -->
+    <section class="feature-row-section alt-bg">
+      <div class="container">
+        <div class="feature-grid-row reversed">
+          
+          <!-- Mockup Left -->
+          <div class="feature-mockup-col">
+            <div class="feature-mockup-card">
+              <div class="recreate-ui-card">
+                <div style="margin-bottom:1rem; font-weight:700; font-size:0.9rem; display:flex; justify-content:space-between;">
+                  <span>Viral Link Deconstructor</span>
+                  <span style="font-family:var(--font-mono); font-size:0.75rem; color:#2563eb;">[DECONSTRUCTED]</span>
+                </div>
+
+                <div class="recreate-flow-step">
+                  <div class="flow-num">1</div>
+                  <div>
+                    <div class="flow-text-head">Raw Video Ingestion</div>
+                    <div class="flow-text-sub">instagram.com/reel/C8_kL90Pq/ • 48s reel ingested</div>
+                  </div>
+                </div>
+
+                <div class="recreate-flow-step">
+                  <div class="flow-num" style="background:#8b5cf6;">2</div>
+                  <div>
+                    <div class="flow-text-head">Structural Blueprint Extraction</div>
+                    <div class="flow-text-sub">Hook (3s) &rarr; Proof (7s) &rarr; Breakdown (22s) &rarr; Loop CTA (6s)</div>
+                  </div>
+                </div>
+
+                <div class="recreate-flow-step" style="margin-bottom:0;">
+                  <div class="flow-num" style="background:#10b981;">3</div>
+                  <div>
+                    <div class="flow-text-head">Brand-Safe Synthesis & Voiceover</div>
+                    <div class="flow-text-sub">Synthesized with your brand typography, logo & custom AI voice clone</div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Copy Right -->
+          <div class="feature-copy-col">
+            <span class="eyebrow">REVERSE-ENGINEER VIRALITY</span>
+            <h3 class="feature-headline">
+              Transform any reference video into <span class="gradient-text">an original blockbuster</span>.
+            </h3>
+            <p class="feature-paragraph">
+              Paste any viral Instagram Reel or TikTok URL. INSTA deconstructs the pacing, audio beat drops, and psychological triggers, generating a completely original, brand-safe video calibrated for your specific product.
+            </p>
+
+            <ul class="feature-checklist">
+              <li class="checklist-item">
+                <div class="check-icon-circle">✓</div>
+                <span>Frame-by-frame pacing extraction without copying protected IP.</span>
+              </li>
+              <li class="checklist-item">
+                <div class="check-icon-circle">✓</div>
+                <span>Studio-grade elevenlabs voice cloning or ultra-realistic stock narrators.</span>
+              </li>
+              <li class="checklist-item">
+                <div class="check-icon-circle">✓</div>
+                <span>Kinetic subtitle presets (Hormozi, MrBeast, Vox minimalist, Editorial).</span>
+              </li>
+            </ul>
+
+            <div class="feature-attribution-badge">
+              <span class="dot"></span>
+              <span>Executed autonomously by <strong>Agent Scribe & ReelFX</strong></span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         8. FEATURE SECTION — SCHEDULING (Copy Left, Mockup Right)
+         ======================================================================= -->
+    <section class="feature-row-section">
+      <div class="container">
+        <div class="feature-grid-row">
+          
+          <!-- Copy Left -->
+          <div class="feature-copy-col">
+            <span class="eyebrow">ZERO-TOUCH ORCHESTRATION</span>
+            <h3 class="feature-headline">
+              Set your target once. Let agents <span class="gradient-text">publish at algorithmic peaks</span>.
+            </h3>
+            <p class="feature-paragraph">
+              Say goodbye to manual upload reminders. Agent Pulse monitors your follower active windows and publishes directly through the Meta Graph API at the exact minute your engagement probability is highest.
+            </p>
+
+            <ul class="feature-checklist">
+              <li class="checklist-item">
+                <div class="check-icon-circle">✓</div>
+                <span>Algorithmic traffic matching: dynamic publishing based on audience presence.</span>
+              </li>
+              <li class="checklist-item">
+                <div class="check-icon-circle">✓</div>
+                <span>Autonomous multi-variant A/B testing on covers and opening captions.</span>
+              </li>
+              <li class="checklist-item">
+                <div class="check-icon-circle">✓</div>
+                <span>100% compliant Meta Graph API direct auto-publishing (no push notifications).</span>
+              </li>
+            </ul>
+
+            <div class="feature-attribution-badge">
+              <span class="dot"></span>
+              <span>Executed autonomously by <strong>Agent Pulse</strong></span>
+            </div>
+          </div>
+
+          <!-- Mockup Right -->
+          <div class="feature-mockup-col">
+            <div class="feature-mockup-card">
+              <div class="calendar-ui-card">
+                <div class="calendar-header">
+                  <span>Weekly Reel Queue — Dynamic Algorithmic Windows</span>
+                  <span style="color:#10b981; font-size:0.75rem;">● 7 of 7 Scheduled</span>
+                </div>
+
+                <div class="calendar-grid-mini">
+                  <!-- Mon -->
+                  <div class="cal-day-cell scheduled">
+                    <span style="font-weight:700;">Mon</span>
+                    <div class="cal-dot-post"></div>
+                    <span style="font-size:0.65rem; color:#2563eb;">6:40 PM</span>
+                  </div>
+                  <!-- Tue -->
+                  <div class="cal-day-cell scheduled">
+                    <span style="font-weight:700;">Tue</span>
+                    <div class="cal-dot-post"></div>
+                    <span style="font-size:0.65rem; color:#2563eb;">12:15 PM</span>
+                  </div>
+                  <!-- Wed -->
+                  <div class="cal-day-cell scheduled">
+                    <span style="font-weight:700;">Wed</span>
+                    <div class="cal-dot-post"></div>
+                    <span style="font-size:0.65rem; color:#2563eb;">7:10 PM</span>
+                  </div>
+                  <!-- Thu -->
+                  <div class="cal-day-cell scheduled">
+                    <span style="font-weight:700;">Thu</span>
+                    <div class="cal-dot-post"></div>
+                    <span style="font-size:0.65rem; color:#2563eb;">6:30 PM</span>
+                  </div>
+                  <!-- Fri -->
+                  <div class="cal-day-cell scheduled">
+                    <span style="font-weight:700;">Fri</span>
+                    <div class="cal-dot-post"></div>
+                    <span style="font-size:0.65rem; color:#2563eb;">5:45 PM</span>
+                  </div>
+                  <!-- Sat -->
+                  <div class="cal-day-cell scheduled">
+                    <span style="font-weight:700;">Sat</span>
+                    <div class="cal-dot-post"></div>
+                    <span style="font-size:0.65rem; color:#2563eb;">11:00 AM</span>
+                  </div>
+                  <!-- Sun -->
+                  <div class="cal-day-cell scheduled">
+                    <span style="font-weight:700;">Sun</span>
+                    <div class="cal-dot-post"></div>
+                    <span style="font-size:0.65rem; color:#2563eb;">8:00 PM</span>
+                  </div>
+                </div>
+
+                <div style="margin-top:1rem; padding:0.75rem; background:#f8fafc; border-radius:6px; font-size:0.8rem; display:flex; justify-content:space-between; align-items:center;">
+                  <div>
+                    <span style="font-weight:700;">Next Dispatch:</span>
+                    <span style="color:#64748b;"> Today @ 6:40 PM • "3 SaaS Hook Rules"</span>
+                  </div>
+                  <span class="pill-badge" style="font-size:0.7rem; background:#ecfdf5; color:#059669; border-color:#a7f3d0;">Ready</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         9. FEATURE SECTION — SOCIAL LISTENING (Mockup Left, Copy Right)
+         ======================================================================= -->
+    <section class="feature-row-section alt-bg">
+      <div class="container">
+        <div class="feature-grid-row reversed">
+          
+          <!-- Mockup Left -->
+          <div class="feature-mockup-col">
+            <div class="feature-mockup-card">
+              <div class="listening-ui-card">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
+                  <span style="font-weight:700; font-size:0.9rem;">Live Inbound Interaction Stream</span>
+                  <span class="pill-badge" style="font-size:0.7rem; background:#eff6ff; color:#2563eb;">Sentiment Active</span>
+                </div>
+
+                <!-- Comment 1 -->
+                <div class="comment-item">
+                  <div class="comment-author-row">
+                    <span>@growth_founder</span>
+                    <span style="font-size:0.7rem; color:#059669; font-weight:700;">Intent: High Purchase</span>
+                  </div>
+                  <div class="comment-body">"Can this automatically sync with our brand design guidelines in Figma?"</div>
+                  <div class="comment-ai-reply">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+                    <span><strong>Agent Pulse replied & DM sent:</strong> "Yes! INSTA syncs hex colors, font files & logos in 1-click. Sent setup link to your DM!"</span>
+                  </div>
+                </div>
+
+                <!-- Comment 2 -->
+                <div class="comment-item" style="border-left-color:#3b82f6;">
+                  <div class="comment-author-row">
+                    <span>@sarah_creator</span>
+                    <span style="font-size:0.7rem; color:#2563eb; font-weight:700;">Intent: Trigger 'HOOK'</span>
+                  </div>
+                  <div class="comment-body">"HOOK"</div>
+                  <div class="comment-ai-reply" style="background:#f5f3ff; color:#7c3aed;">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+                    <span><strong>Automated DM dispatched:</strong> Delivered 500+ Viral Hook Swipe File in 3.2 seconds.</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Copy Right -->
+          <div class="feature-copy-col">
+            <span class="eyebrow">24/7 BRAND CONVERSATION</span>
+            <h3 class="feature-headline">
+              Turn every comment and DM into <span class="gradient-text">an active conversion funnel</span>.
+            </h3>
+            <p class="feature-paragraph">
+              High-retention Reels drive enormous comment volume. Agent Pulse categorizes intent instantly: dispatching private direct messages with requested lead magnets, addressing product queries, and driving qualified buyers to checkout.
+            </p>
+
+            <ul class="feature-checklist">
+              <li class="checklist-item">
+                <div class="check-icon-circle">✓</div>
+                <span>Sentiment & intent classification (buying intent, support, bot spam filter).</span>
+              </li>
+              <li class="checklist-item">
+                <div class="check-icon-circle">✓</div>
+                <span>Trigger word DM dispatching ('COMMENT "AGENT" FOR ACCESS') in under 4 seconds.</span>
+              </li>
+              <li class="checklist-item">
+                <div class="check-icon-circle">✓</div>
+                <span>Safe human escalation flags for sensitive corporate enterprise inquiries.</span>
+              </li>
+            </ul>
+
+            <div class="feature-attribution-badge">
+              <span class="dot"></span>
+              <span>Executed autonomously by <strong>Agent Pulse</strong></span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         10. TEMPLATE LIBRARY SECTION (Dark)
+         ======================================================================= -->
+    <section class="template-section" id="templates">
+      <div class="container-wide">
+        
+        <div class="template-header">
+          <span class="pill-badge dark">FRAMEWORK VAULT</span>
+          <h2>500+ battle-tested viral frameworks, <span class="gradient-text">ready to deploy in seconds</span>.</h2>
+          <p>
+            Choose from the highest-performing video architectures across SaaS, eCommerce, Creator, and Agency niches.
+          </p>
+        </div>
+
+        <!-- 4x Template Cards -->
+        <div class="templates-grid">
+          
+          <!-- Template 1 -->
+          <div class="template-card">
+            <div class="template-video-preview">
+              <div class="template-thumb-img" style="background: linear-gradient(135deg, #1e293b, #0f172a); display:flex; align-items:center; justify-content:center; color:#94a3b8; font-weight:700;">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="1.5"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              </div>
+              <button class="template-recreate-btn">
+                <span>Remix This Framework</span>
+                <span aria-hidden="true">&rarr;</span>
+              </button>
+            </div>
+            <div class="template-info-box">
+              <h4 class="template-title">The Contrarian Teardown</h4>
+              <div class="template-category">B2B SaaS • 32s Duration</div>
+              <div class="template-metrics-row">
+                <span>Avg Hook: 92%</span>
+                <span>4.8M Total Views</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Template 2 -->
+          <div class="template-card">
+            <div class="template-video-preview">
+              <div class="template-thumb-img" style="background: linear-gradient(135deg, #2e1065, #0f172a); display:flex; align-items:center; justify-content:center; color:#c084fc; font-weight:700;">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#c084fc" stroke-width="1.5"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
+              </div>
+              <button class="template-recreate-btn">
+                <span>Remix This Framework</span>
+                <span aria-hidden="true">&rarr;</span>
+              </button>
+            </div>
+            <div class="template-info-box">
+              <h4 class="template-title">3 Mistakes Holding You Back</h4>
+              <div class="template-category">eCommerce Growth • 24s Duration</div>
+              <div class="template-metrics-row">
+                <span>Avg Hook: 89%</span>
+                <span>2.3M Total Views</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Template 3 -->
+          <div class="template-card">
+            <div class="template-video-preview">
+              <div class="template-thumb-img" style="background: linear-gradient(135deg, #064e3b, #022c22); display:flex; align-items:center; justify-content:center; color:#6ee7b7; font-weight:700;">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              </div>
+              <button class="template-recreate-btn">
+                <span>Remix This Framework</span>
+                <span aria-hidden="true">&rarr;</span>
+              </button>
+            </div>
+            <div class="template-info-box">
+              <h4 class="template-title">The Secret Tool Stack</h4>
+              <div class="template-category">Tech & AI Creators • 35s Duration</div>
+              <div class="template-metrics-row">
+                <span>Avg Hook: 95%</span>
+                <span>6.1M Total Views</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Template 4 -->
+          <div class="template-card">
+            <div class="template-video-preview">
+              <div class="template-thumb-img" style="background: linear-gradient(135deg, #4c0519, #0f172a); display:flex; align-items:center; justify-content:center; color:#fda4af; font-weight:700;">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#fb7185" stroke-width="1.5"><path d="M23 6l-9.5 9.5-5-5L1 18"></path><path d="M17 6h6v6"></path></svg>
+              </div>
+              <button class="template-recreate-btn">
+                <span>Remix This Framework</span>
+                <span aria-hidden="true">&rarr;</span>
+              </button>
+            </div>
+            <div class="template-info-box">
+              <h4 class="template-title">Day in the Life of a High-Performer</h4>
+              <div class="template-category">Brand Storytelling • 45s Duration</div>
+              <div class="template-metrics-row">
+                <span>Avg Hook: 87%</span>
+                <span>3.2M Total Views</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="btn btn-white" style="font-size:0.95rem; padding:0.85rem 2rem;">
+          Browse All 500+ Frameworks
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </button>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         11. CODEX / TERMINAL SECTION (Dark)
+         ======================================================================= -->
+    <section class="plugin-section" id="plugin">
+      <div class="container">
+        
+        <div class="plugin-header">
+          <span class="pill-badge dark">DEVELOPER & PIPELINE ECOSYSTEM</span>
+          <h2>Deploy INSTA agents <span class="gradient-text">directly in your workflow</span>.</h2>
+          <p>
+            Trigger video generation pipelines through our developer CLI, Python SDK, or native ChatGPT & Claude custom actions.
+          </p>
+        </div>
+
+        <!-- Terminal Window Mockup -->
+        <div class="terminal-mockup-wrapper">
+          <div class="terminal-top-bar">
+            <div class="window-controls">
+              <span class="window-dot dot-red"></span>
+              <span class="window-dot dot-yellow"></span>
+              <span class="window-dot dot-green"></span>
+            </div>
+            <div class="terminal-tab-name">bash — insta-agent-cli v2.4.0</div>
+            <button id="copyCliBtn" style="font-size:0.75rem; color:#94a3b8; display:flex; align-items:center; gap:0.35rem;">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              <span>Copy</span>
+            </button>
+          </div>
+
+          <div class="terminal-body">
+            <div class="t-dim"># 1. Install INSTA autonomous agent engine</div>
+            <div><span class="t-purple">$</span> npm install -g @insta/agent-cli</div>
+            <br>
+            <div class="t-dim"># 2. Trigger end-to-end multi-agent video generation</div>
+            <div><span class="t-purple">$</span> <span class="t-cyan">insta</span> generate \</div>
+            <div style="padding-left:1.5rem;">--niche <span class="t-green">"b2b_saas"</span> \</div>
+            <div style="padding-left:1.5rem;">--source <span class="t-green">"https://instagram.com/reel/trending-hook"</span> \</div>
+            <div style="padding-left:1.5rem;">--style <span class="t-green">"minimalist_editorial"</span> \</div>
+            <div style="padding-left:1.5rem;">--auto-schedule <span class="t-yellow">true</span></div>
+            <br>
+            <div class="t-cyan">[Agent Scout]</span> Analyzed target reel: 3-second hook retention: 91.4%</div>
+            <div class="t-purple">[Agent Scribe]</span> Generated 3 original script variations for brand voice</div>
+            <div class="t-green">[Agent ReelFX]</span> Synthesized 4K 60fps video with dynamic captions (Took 14.2s)</div>
+            <div class="t-yellow">[Agent Pulse]</span> Scheduled for auto-dispatch @ 18:42:00 UTC (Meta Graph API verified)</div>
+            <br>
+            <div style="color:#4ade80;">✔ Pipeline complete: Video asset generated at build/reels/reel_q4_01.mp4</div>
+          </div>
+        </div>
+
+        <div class="plugin-install-cta">
+          <a href="#install" class="btn btn-blue">
+            <span>Install CLI / SDK</span>
+            <span aria-hidden="true">&rarr;</span>
+          </a>
+          <a href="#docs" class="btn btn-outline-dark">
+            <span>Read API Documentation</span>
+          </a>
+        </div>
+
+        <div class="plugin-metadata-row">
+          <span>npm v2.4.0</span>
+          <span>•</span>
+          <span>48k+ weekly installs</span>
+          <span>•</span>
+          <span>99.99% API Uptime</span>
+          <span>•</span>
+          <span>Meta Certified Partner</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         12. COMPARISON SECTION (White)
+         ======================================================================= -->
+    <section class="comparison-section" id="benchmark">
+      <div class="container">
+        
+        <div class="comparison-header">
+          <span class="eyebrow">02 / BENCHMARK</span>
+          <h2>Why modern brands replace traditional agencies with INSTA.</h2>
+          <p>
+            Compare the turnaround speed, production cost, and algorithmic accuracy of autonomous agents versus old-fashioned production workflows.
+          </p>
+        </div>
+
+        <!-- Comparison Table -->
+        <div class="comparison-table-wrapper">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th style="width: 30%;">Capability</th>
+                <th style="width: 23%;">Traditional Agency</th>
+                <th class="col-highlight" style="width: 27%;">
+                  <div class="table-agent-head">
+                    <div class="table-avatars-mini">
+                      <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='%233b82f6'%3E%3Crect width='24' height='24' rx='12'/%3E%3C/svg%3E" alt="Scout">
+                      <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='%238b5cf6'%3E%3Crect width='24' height='24' rx='12'/%3E%3C/svg%3E" alt="Scribe">
+                      <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='%2306b6d4'%3E%3Crect width='24' height='24' rx='12'/%3E%3C/svg%3E" alt="ReelFX">
+                    </div>
+                    <span>INSTA Agents</span>
+                  </div>
+                </th>
+                <th style="width: 20%;">DIY / CapCut</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Turnaround Time</strong></td>
+                <td>10 – 14 business days</td>
+                <td class="col-highlight" style="color:#2563eb;">⚡ 8 minutes</td>
+                <td>4 – 8 hours manual</td>
+              </tr>
+              <tr>
+                <td><strong>Cost Per Finished Reel</strong></td>
+                <td>$250 – $750 / video</td>
+                <td class="col-highlight" style="color:#2563eb;">⚡ $1.80 / video</td>
+                <td>$0 + hours of founder time</td>
+              </tr>
+              <tr>
+                <td><strong>Trend Spotting</strong></td>
+                <td>Manual scrolling & guess</td>
+                <td class="col-highlight">Autonomous 250k creator crawler</td>
+                <td>Personal feed algorithm</td>
+              </tr>
+              <tr>
+                <td><strong>Voiceover & Audio</strong></td>
+                <td>Separate voice actors ($)</td>
+                <td class="col-highlight">Studio voice clone included</td>
+                <td>Generic robotic voices</td>
+              </tr>
+              <tr>
+                <td><strong>Automated Publishing</strong></td>
+                <td>Third-party tool required</td>
+                <td class="col-highlight">Dynamic peak window autopilot</td>
+                <td>Manual alarm notifications</td>
+              </tr>
+              <tr>
+                <td><strong>Inbound Lead DM Bot</strong></td>
+                <td>None (Separate tool)</td>
+                <td class="col-highlight">Native intent classification & DM</td>
+                <td>Manual reply typing</td>
+              </tr>
+              <tr>
+                <td><strong>Iteration Velocity</strong></td>
+                <td>2 revision rounds max</td>
+                <td class="col-highlight">Unlimited 1-click re-generations</td>
+                <td>Manual timeline re-editing</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 3 Callout Cards Underneath -->
+        <div class="callout-cards-grid">
+          <div class="callout-card">
+            <h4>92% Cost Reduction</h4>
+            <p>Produce 30 monthly high-fidelity Reels for less than the cost of a single freelance editor’s retainer.</p>
+          </div>
+          <div class="callout-card">
+            <h4>100% Brand Consistency</h4>
+            <p>Every font weight, subtitle hex code, animation style, and voice cadence strictly locked to your brand guidelines.</p>
+          </div>
+          <div class="callout-card">
+            <h4>Continuous Adaptation</h4>
+            <p>Agents learn which hooks win on your specific profile, compounding retention metrics week over week.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         13. PRICING SECTION (Dark)
+         ======================================================================= -->
+    <section class="pricing-section" id="pricing">
+      <div class="container">
+        
+        <div class="pricing-header">
+          <span class="pill-badge dark">NO HIDDEN FEES</span>
+          <h2>Simple, transparent pricing for <span class="gradient-text">limitless creative scale</span>.</h2>
+          <p>
+            Start with our 14-day free trial. Scale seamlessly as your video volume and audience expand.
+          </p>
+        </div>
+
+        <!-- Billing Toggle -->
+        <div class="billing-toggle-wrap">
+          <button class="toggle-btn" id="monthlyBtn">Monthly</button>
+          <button class="toggle-btn active" id="annualBtn">
+            Annual Billing
+            <span class="save-badge">Save 20%</span>
+          </button>
+        </div>
+
+        <!-- 3 Columns -->
+        <div class="pricing-grid">
+          
+          <!-- Plan 1: Starter -->
+          <div class="pricing-card">
+            <h3 class="plan-name">Starter Creator</h3>
+            <p class="plan-desc">For solo founders and creators kicking off autonomous short-form growth.</p>
+            
+            <div class="plan-price-wrap">
+              <span class="plan-price" data-monthly="$39" data-annual="$29">$29</span>
+              <span class="plan-period">/ month</span>
+            </div>
+
+            <ul class="plan-features-list">
+              <li class="plan-feature-item">
+                <span class="plan-check-icon">✓</span>
+                <span>30 AI-Generated Reels / mo</span>
+              </li>
+              <li class="plan-feature-item">
+                <span class="plan-check-icon">✓</span>
+                <span>Scout & Scribe agents active</span>
+              </li>
+              <li class="plan-feature-item">
+                <span class="plan-check-icon">✓</span>
+                <span>1080p Full HD export</span>
+              </li>
+              <li class="plan-feature-item">
+                <span class="plan-check-icon">✓</span>
+                <span>Auto-scheduling to 1 Instagram account</span>
+              </li>
+              <li class="plan-feature-item">
+                <span class="plan-check-icon">✓</span>
+                <span>Standard voiceover library</span>
+              </li>
+            </ul>
+
+            <button class="btn btn-outline-dark" style="width:100%;">Start 14-Day Free Trial</button>
+          </div>
+
+          <!-- Plan 2: Pro (Dominant / Highlighted) -->
+          <div class="pricing-card featured">
+            <div class="featured-badge-pill">MOST POPULAR • 4 AGENTS</div>
+            
+            <h3 class="plan-name">Growth Studio</h3>
+            <p class="plan-desc">For scaling brands and content teams looking to dominate multiple channels.</p>
+            
+            <div class="plan-price-wrap">
+              <span class="plan-price" data-monthly="$99" data-annual="$79">$79</span>
+              <span class="plan-period">/ month</span>
+            </div>
+
+            <!-- Avatars Row in Card -->
+            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:1.5rem; background:rgba(61,120,196,0.15); padding:0.45rem 0.75rem; border-radius:var(--radius-full); width:fit-content;">
+              <span style="font-size:0.75rem; color:#93c5fd; font-weight:700;">Includes All 4 Agents:</span>
+              <div style="display:flex;">
+                <span style="width:18px; height:18px; border-radius:50%; background:#3b82f6; display:inline-block; font-size:9px; text-align:center; line-height:18px;">S</span>
+                <span style="width:18px; height:18px; border-radius:50%; background:#8b5cf6; display:inline-block; font-size:9px; text-align:center; line-height:18px; margin-left:-4px;">W</span>
+                <span style="width:18px; height:18px; border-radius:50%; background:#06b6d4; display:inline-block; font-size:9px; text-align:center; line-height:18px; margin-left:-4px;">R</span>
+                <span style="width:18px; height:18px; border-radius:50%; background:#10b981; display:inline-block; font-size:9px; text-align:center; line-height:18px; margin-left:-4px;">P</span>
+              </div>
+            </div>
+
+            <ul class="plan-features-list">
+              <li class="plan-feature-item">
+                <span class="plan-check-icon">✓</span>
+                <span><strong>120 AI-Generated Reels / mo</strong></span>
+              </li>
+              <li class="plan-feature-item">
+                <span class="plan-check-icon">✓</span>
+                <span>4K Ultra-HD export + Custom voice clones</span>
+              </li>
+              <li class="plan-feature-item">
+                <span class="plan-check-icon">✓</span>
+                <span>1-Click Viral Link Recreator</span>
+              </li>
+              <li class="plan-feature-item">
+                <span class="plan-check-icon">✓</span>
+                <span>Agent Pulse 24/7 Comment & DM listener</span>
+              </li>
+              <li class="plan-feature-item">
+                <span class="plan-check-icon">✓</span>
+                <span>3 Instagram & TikTok account connections</span>
+              </li>
+              <li class="plan-feature-item">
+                <span class="plan-check-icon">✓</span>
+                <span>Full access to 500+ viral template frameworks</span>
+              </li>
+            </ul>
+
+            <button class="btn btn-blue" style="width:100%;">Start 14-Day Free Trial</button>
+          </div>
+
+          <!-- Plan 3: Scale / Agency -->
+          <div class="pricing-card">
+            <h3 class="plan-name">Agency Scale</h3>
+            <p class="plan-desc">For digital agencies and enterprise marketing divisions managing multiple client brands.</p>
+            
+            <div class="plan-price-wrap">
+              <span class="plan-price" data-monthly="$249" data-annual="$199">$199</span>
+              <span class="plan-period">/ month</span>
+            </div>
+
+            <ul class="plan-features-list">
+              <li class="plan-feature-item">
+                <span class="plan-check-icon">✓</span>
+                <span>Unlimited AI Video Generations</span>
+              </li>
+              <li class="plan-feature-item">
+                <span class="plan-check-icon">✓</span>
+                <span>Dedicated Agent Node Cluster</span>
+              </li>
+              <li class="plan-feature-item">
+                <span class="plan-check-icon">✓</span>
+                <span>Up to 15 Connected Brand Accounts</span>
+              </li>
+              <li class="plan-feature-item">
+                <span class="plan-check-icon">✓</span>
+                <span>Full Developer CLI & Webhook API Access</span>
+              </li>
+              <li class="plan-feature-item">
+                <span class="plan-check-icon">✓</span>
+                <span>Dedicated Account Strategist & Slack Channel</span>
+              </li>
+            </ul>
+
+            <button class="btn btn-outline-dark" style="width:100%;">Contact Enterprise</button>
+          </div>
+
+        </div>
+
+        <div class="pricing-footer-links">
+          <span>Need custom high-volume API quotas or custom trained models? </span>
+          <a href="#contact">Talk to our solutions engineering team &rarr;</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         14. FAQ SECTION (White)
+         ======================================================================= -->
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <div class="faq-grid-row">
+          
+          <!-- Left Column -->
+          <div class="faq-left-col">
+            <span class="eyebrow">COMMON QUESTIONS</span>
+            <h2>Frequently answered, clearly stated.</h2>
+            <p>
+              Everything you need to know about the autonomous agent architecture, Meta compliance, and video rights.
+            </p>
+            <p style="font-size:0.9rem; color:#64748b;">
+              Have a question not listed here?<br>
+              <a href="mailto:support@insta.ai" style="color:var(--blue-primary); font-weight:600;">Reach out to support@insta.ai</a>
+            </p>
+          </div>
+
+          <!-- Right Column: Accordion List -->
+          <div class="faq-right-col">
+            <div class="accordion-list">
+              
+              <!-- Q1 -->
+              <div class="accordion-item open">
+                <button class="accordion-trigger" aria-expanded="true">
+                  <span>How do INSTA agents differ from simple ChatGPT prompts?</span>
+                  <svg class="accordion-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+                <div class="accordion-content">
+                  <div class="accordion-body-text">
+                    Generic LLMs lack social media heuristics and multi-modal synthesis. INSTA is a coordinated cluster of 4 specialized agents. One analyzes real-time audio velocity, one reverse-engineers retention hooks, one renders kinetic typography and b-roll cuts, and one manages direct Meta API dispatching and comment replies.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Q2 -->
+              <div class="accordion-item">
+                <button class="accordion-trigger" aria-expanded="false">
+                  <span>Is auto-publishing fully compliant with Instagram’s terms of service?</span>
+                  <svg class="accordion-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+                <div class="accordion-content">
+                  <div class="accordion-body-text">
+                    Yes, 100%. INSTA integrates strictly through the official Meta Graph API and Instagram Content Publishing API. We never use unofficial browser scrapers or unapproved reverse-engineered mobile endpoints. Your account credentials remain protected under Meta OAuth2 security.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Q3 -->
+              <div class="accordion-item">
+                <button class="accordion-trigger" aria-expanded="false">
+                  <span>Can I use my own voice and personal brand assets?</span>
+                  <svg class="accordion-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+                <div class="accordion-content">
+                  <div class="accordion-body-text">
+                    Absolutely. You can upload 60 seconds of reference audio to clone your exact voice cadence. You can also upload custom font files, brand color hex codes, intro watermarks, and raw b-roll footage libraries for the agents to pull from.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Q4 -->
+              <div class="accordion-item">
+                <button class="accordion-trigger" aria-expanded="false">
+                  <span>Who owns the intellectual property of the generated videos?</span>
+                  <svg class="accordion-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+                <div class="accordion-content">
+                  <div class="accordion-body-text">
+                    You own 100% of the commercial rights to all scripts, audio tracks, rendered videos, and visual assets created with INSTA. You can monetize them, run them as paid Instagram Ads, or sell them to your agency clients with no royalties.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Q5 -->
+              <div class="accordion-item">
+                <button class="accordion-trigger" aria-expanded="false">
+                  <span>What happens after my 14-day free trial ends?</span>
+                  <svg class="accordion-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+                <div class="accordion-content">
+                  <div class="accordion-body-text">
+                    You will receive full access to all features during the 14 days without charge. If you choose not to subscribe, your account will downgrade to a read-only archive where your existing rendered videos remain downloadable forever.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         15. FINAL CTA & FOOTER (Dark)
+         ======================================================================= -->
+    <section class="final-cta-section">
+      <div class="container">
+        
+        <!-- Large Rounded CTA Panel -->
+        <div class="cta-box-panel">
+          <h2 class="cta-headline">
+            Ready to turn your Instagram into a <span class="gradient-text">viral compounding machine</span>?
+          </h2>
+          <p class="cta-subhead">
+            Deploy your dedicated 4-agent creative cluster in less than 2 minutes. No credit card required.
+          </p>
+
+          <div class="cta-button-row">
+            <a href="#pricing" class="btn btn-blue" style="font-size:1.05rem; padding:0.9rem 2.2rem;">
+              <span>Start 14-Day Free Trial</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#demo" class="btn btn-outline-dark" style="font-size:1.05rem; padding:0.9rem 1.8rem;">
+              <span>Book 15-Min Live Demo</span>
+            </a>
+          </div>
+
+          <div class="award-badge-pill">
+            <span>🏆 #1 AI Video Agent on Product Hunt</span>
+            <span>•</span>
+            <span>Rated 4.9/5 by 1,400+ Growth Teams</span>
+          </div>
+        </div>
+
+        <!-- Footer Columns -->
+        <footer class="site-footer">
+          <div class="footer-columns-grid">
+            
+            <!-- Col 1: Brand -->
+            <div class="footer-brand-col">
+              <div class="footer-logo">
+                <div class="brand-logo-icon" style="width:28px; height:28px;">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                </div>
+                <span>INSTA</span>
+              </div>
+              <p class="footer-desc">
+                The autonomous multi-agent production ecosystem for high-velocity social video, viral research, and 24/7 engagement.
+              </p>
+              <div style="font-size:0.8rem; color:#94a3b8;">
+                Backed by leading AI researchers & creators worldwide.
+              </div>
+            </div>
+
+            <!-- Col 2: Product -->
+            <div class="footer-nav-col">
+              <h5>Product</h5>
+              <ul class="footer-links-list">
+                <li><a href="#agents" class="footer-link-item">Agent Scout (Research)</a></li>
+                <li><a href="#agents" class="footer-link-item">Agent Scribe (Scripts)</a></li>
+                <li><a href="#agents" class="footer-link-item">Agent ReelFX (Video Synthesis)</a></li>
+                <li><a href="#agents" class="footer-link-item">Agent Pulse (Scheduler & DMs)</a></li>
+                <li><a href="#templates" class="footer-link-item">Viral Template Vault</a></li>
+              </ul>
+            </div>
+
+            <!-- Col 3: Integrations -->
+            <div class="footer-nav-col">
+              <h5>Developers</h5>
+              <ul class="footer-links-list">
+                <li><a href="#plugin" class="footer-link-item">CLI & NPM Package</a></li>
+                <li><a href="#plugin" class="footer-link-item">Python SDK</a></li>
+                <li><a href="#plugin" class="footer-link-item">ChatGPT Action</a></li>
+                <li><a href="#plugin" class="footer-link-item">Claude Tool Integration</a></li>
+                <li><a href="#plugin" class="footer-link-item">Meta Graph API Docs</a></li>
+              </ul>
+            </div>
+
+            <!-- Col 4: Resources -->
+            <div class="footer-nav-col">
+              <h5>Company</h5>
+              <ul class="footer-links-list">
+                <li><a href="#about" class="footer-link-item">About Us</a></li>
+                <li><a href="#changelog" class="footer-link-item">Changelog</a></li>
+                <li><a href="#careers" class="footer-link-item">Careers (We're Hiring!)</a></li>
+                <li><a href="#privacy" class="footer-link-item">Privacy Policy</a></li>
+                <li><a href="#terms" class="footer-link-item">Terms of Service</a></li>
+              </ul>
+            </div>
+
+            <!-- Col 5: Security -->
+            <div class="footer-nav-col">
+              <h5>Security & Status</h5>
+              <ul class="footer-links-list">
+                <li><a href="#security" class="footer-link-item">SOC2 Type II Certified</a></li>
+                <li><a href="#security" class="footer-link-item">GDPR Compliant</a></li>
+                <li><a href="#security" class="footer-link-item">Meta Partner Guidelines</a></li>
+                <li><a href="#status" class="footer-link-item">System Status</a></li>
+              </ul>
+            </div>
+
+          </div>
+
+          <!-- Bottom Bar -->
+          <div class="footer-bottom-bar">
+            <div>
+              &copy; 2026 ALTMASH Technologies, Inc. All rights reserved.
+            </div>
+            
+            <div class="footer-status-indicator">
+              <span class="status-pulsing-dot"></span>
+              <span>All 4 Agent Clusters Operational (99.99%)</span>
+            </div>
+          </div>
+
+          <!-- Giant Low-Contrast Watermark -->
+          <div class="footer-watermark-text" aria-hidden="true">
+            ALTMASH
+          </div>
+        </footer>
+
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
